@@ -1,0 +1,36 @@
+body {
+  background-color: #F4F6F6;
+}
+.ttl {
+  font-size: 16px;
+
+  &:before {
+    content: "あなたは";
+  }
+  &:after {
+    content: "なフレンズなんだね！";
+  }
+}
+// extend
+%serif_base {
+  width: 33%;
+  float: left;
+}
+.box {
+  @include clearfix;
+
+  .serif-yokoso {
+    @extend %serif_base;
+    @include radius;
+    background: $base-color;
+  }
+  .serif-sugoi {
+    @extend %serif_base;
+    @include radius(#000, 50px);
+    background: lighten($base-color, 15%);
+  }
+  .serif-tanoshi {
+    @extend %serif_base;
+    background: darken($base-color, 15%);
+  }
+}

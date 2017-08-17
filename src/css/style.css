@@ -1,0 +1,32 @@
+@charset "UTF-8";
+body {
+  background-color: #F4F6F6; }
+
+.ttl {
+  font-size: 16px; }
+  .ttl:before {
+    content: "あなたは"; }
+  .ttl:after {
+    content: "なフレンズなんだね！"; }
+
+.box .serif-yokoso, .box .serif-sugoi, .box .serif-tanoshi {
+  width: 33%;
+  float: left; }
+
+.box:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.box .serif-yokoso {
+  color: #fff;
+  border-radius: 3px;
+  background: #F1C40F; }
+
+.box .serif-sugoi {
+  color: #000;
+  border-radius: 50px;
+  background: #f5d657; }
+
+.box .serif-tanoshi {
+  background: #aa8a0a; }
